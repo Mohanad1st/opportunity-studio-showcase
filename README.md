@@ -1,8 +1,10 @@
-<p align="center"><img src="assets/banner.svg" alt="Opportunity Studio — An evidence-first pipeline for grants, fellowships and tenders" width="100%"></p>
+<p align="center"><img src="assets/banner.svg" alt="Opportunity Studio" width="100%"></p>
 
-<p align="center"><b>Status:</b> In active internal use &nbsp;·&nbsp; <b>Built by</b> <a href="https://github.com/Mohanad1st">Mohannad Hesham</a> &nbsp;·&nbsp; <b>Source:</b> private</p>
+<p align="center"><b>An evidence-first pipeline for grants, fellowships and tenders</b></p>
 
-> **This is a showcase, not the code.** The source is private because it holds a live funding pipeline. This page shows what it does and how it was built, not the code itself. A live walkthrough is available on request.
+<p align="center"><b>Status:</b> In active internal use &nbsp;·&nbsp; <b>Built by</b> <a href="https://github.com/Mohanad1st">Mohannad Hesham</a></p>
+
+> Case study only: the source is private because it holds a live funding pipeline. Walkthrough on request.
 
 ## The problem
 
@@ -21,15 +23,17 @@ Tracking, verifying and drafting dozens of live funding calls by hand, alongside
 How the work flows:
 
 ```mermaid
-flowchart LR
-  A[Discovery sweep] --> B[Intake list]
-  B --> C[Eligibility and fit score]
-  C -- no fit --> Z[Archived with reason]
+flowchart TD
+  accTitle: How an opportunity moves through the studio
+  accDescr: A discovery sweep adds calls to an intake list, each is checked for eligibility and fit, poor fits are archived with a reason, good fits get a decision brief, a person decides, drafting is staged with an evidence ledger and a tough review, and a person approves and submits.
+  A[Discovery] --> B[Intake]
+  B --> C{Fit score}
+  C -- no fit --> Z[Archived]
   C -- fit --> D[Decision brief]
   D --> E{You decide}
-  E -- go --> F[Staged drafting]
+  E -- go --> F[Drafting]
   F --> G[(Evidence ledger)]
-  F --> H[Adversarial review]
+  F --> H[Tough review]
   H --> I{You approve}
   I --> J[You submit]
 ```
@@ -42,7 +46,7 @@ A structured document workspace driven by an AI coding assistant, with a shared 
 
 ## Built responsibly
 
-- Every claim is traced to a verified source or marked unconfirmed — never invented
+- Every claim is traced to a verified source or explicitly marked unconfirmed
 - Human approval before any draft moves forward or any record changes
 - No automatic submission and no automatic outreach
 - A cap on how many proposals are in progress at once, to keep quality over volume
@@ -55,6 +59,7 @@ A structured document workspace driven by an AI coding assistant, with a shared 
 
 - [Ameen](https://github.com/Mohanad1st/ameen-showcase) — A finance desk you talk to, built to stop donation money being misfiled
 - [LFW HR System](https://github.com/Mohanad1st/lfw-hr-system-showcase) — Attendance, leave, overtime and approvals for a field NGO, in Arabic and English
+- [WaterEye](https://github.com/Mohanad1st/watereye-showcase) — Read an analogue water gauge from a phone photo, no smart meter needed
 - [Life From Water — donation platform](https://github.com/Mohanad1st/lifefromwater-website-showcase) — Donations and impact you can check, for a water-access NGO in rural Egypt
 
 ---
