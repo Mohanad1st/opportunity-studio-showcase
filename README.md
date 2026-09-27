@@ -2,7 +2,7 @@
 
 <p align="center"><b>Status:</b> In active internal use &nbsp;·&nbsp; <b>Built by</b> <a href="https://github.com/Mohanad1st">Mohannad Hesham</a> &nbsp;·&nbsp; <b>Source:</b> private</p>
 
-> **This is a showcase, not the code.** The source is private because the system handles real operations for real people. Nothing here is needed to run it, and nothing here reveals how it is secured. A live walkthrough is available on request.
+> **This is a showcase, not the code.** The source is private because it holds a live funding pipeline. This page shows what it does and how it was built, not the code itself. A live walkthrough is available on request.
 
 ## The problem
 
@@ -34,6 +34,8 @@ flowchart LR
   I --> J[You submit]
 ```
 
+<sub>There are no screens: it is a document workflow, not an app, and its tracker holds live funder data.</sub>
+
 ## Built with
 
 A structured document workspace driven by an AI coding assistant, with a shared spreadsheet tracker and document storage — deliberately no custom app
@@ -51,7 +53,7 @@ A structured document workspace driven by an AI coding assistant, with a shared 
 
 ## More from Life From Water
 
-- [Ameen](https://github.com/Mohanad1st/ameen-showcase) — A finance desk you talk to — and that won't let donation money go astray
+- [Ameen](https://github.com/Mohanad1st/ameen-showcase) — A finance desk you talk to, built to stop donation money being misfiled
 - [LFW HR System](https://github.com/Mohanad1st/lfw-hr-system-showcase) — Attendance, leave, overtime and approvals for a field NGO, in Arabic and English
 - [Life From Water — donation platform](https://github.com/Mohanad1st/lifefromwater-website-showcase) — Donations and impact you can check, for a water-access NGO in rural Egypt
 
